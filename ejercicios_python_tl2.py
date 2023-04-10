@@ -156,3 +156,281 @@ if 5 == 10 or 4 == 4:
   print("At least one of the statements is true")
   print("python usa el algebra de bool, en este caso 'or'significa al menos 1 de las n condiciones cumple ")
 
+print("**************PYTHON LISTS **************\n")
+print("\nejercicio 1:")
+fruits = ["apple", "banana", "cherry"]
+print(
+fruits[1]
+)
+print("\nejercicio 2:")
+fruits = ["apple", "banana", "cherry"]
+fruits[0] = "kiwi"
+print("\nejercicio 3:")
+fruits = ["apple", "banana", "cherry"]
+fruits.append("orange")
+print("\nejercicio 4:")
+fruits = ["apple", "banana", "cherry"]
+fruits.insert(1,"lemon")
+print("\nejercicio 5:")
+fruits = ["apple", "banana", "cherry"]
+fruits.remove("banana")
+print("\nejercicio 6:")
+fruits = ["apple", "banana", "cherry"]
+print(fruits[-1])
+print("\nejercicio 7:")
+fruits = ["apple", "banana", "cherry", "orange", "kiwi", "melon", "mango"]
+print(fruits[2:5])
+print("\nejercicio 8:")
+
+fruits = ["apple", "banana", "cherry"]
+print(len(fruits))
+
+print("**************PYTHON TUPLES**************\n")
+
+print("\nejercicio 1:")
+fruits = ("apple", "banana", "cherry")
+print(fruits[0])
+print("\nejercicio 2:")
+fruits = ("apple", "banana", "cherry")
+print(len(fruits))
+print("\nejercicio 3:")
+fruits = ("apple", "banana", "cherry")
+print(fruits[-1])
+print("\nejercicio 4:")
+fruits = ("apple", "banana", "cherry", "orange", "kiwi", "melon", "mango")
+print(fruits[2:5])
+
+print("**************PYTHON SETS**************\n")
+
+print("\nejercicio 1:")
+fruits = {"apple", "banana", "cherry"}
+if "apple" in fruits: print("Yes, apple is a fruit!")
+
+print("\nejercicio 2:")
+fruits = {"apple", "banana", "cherry"}
+fruits.add("orange")
+
+print("\nejercicio 3:")
+fruits = {"apple", "banana", "cherry"}
+more_fruits = ["orange", "mango", "grapes"]
+fruits.update(more_fruits)
+
+print("\nejercicio 4:")
+fruits = {"apple", "banana", "cherry"}
+fruits.remove("banana")
+
+print("\nejercicio 5:")
+fruits = {"apple", "banana", "cherry"}
+fruits.discard("banana")
+
+print("**************PYTHON DiCTIONARIES**************\n")
+
+print("\nejercicio 1:")
+car =	{
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
+print(car.get("model"))
+print("\nejercicio 2:")
+car =	{
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
+car["year"] = 2020
+print(car.get("year"))
+print("\nejercicio 3:")
+car =	{
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
+car["color"]="red"
+print(car.get("color"))
+
+print("\nejercicio 4:")
+car =	{
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
+car.pop("model")
+print(car)
+
+print("\nejercicio 5:")
+car =	{
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
+car.clear()
+print(car)
+
+print("**************PYTHON IF...ELSE**************\n")
+
+print("\nejercicio 1:")
+a = 50
+b = 10
+if a > b: print("a=",a,"b=",b,"hello world")
+
+print("\nejercicio 2:")
+a = 50
+b = 10
+if a !=b: print("Hello World")
+print("\nejercicio 3:")
+a = 50
+b = 10
+if a==b:print("Yes") 
+else: print("No")
+print("\nejercicio 4:")
+a = 50
+b = 10
+c = 5
+d = 10
+
+if a==b:print("1")
+elif a > b :print("2")
+else: print("3")
+print("\nejercicio 5:")
+if a == b and c == d:
+  print("Hello")
+print("\nejercicio 6:")
+if a == b or c == d:
+ print("Hello")
+print("\nejercicio 7:")
+print("Yes") if 5 > 2 else print("No")
+
+print("**************PYTHON WHILE LOOPS**************\n")
+
+print("\nejercicio 1:")
+i = 1
+while i < 6:
+ print(i) 
+ i += 1
+print("\nejercicio 2:")
+i = 1
+while i < 6:
+    if i == 3:
+        print(i)
+        break
+    i += 1
+
+
+print("\nejercicio 3:")
+i= 0
+while i< 6:
+  i+=1
+  if i==3:
+   continue
+  print(i)
+print("\nejercicio 4:")
+
+i=1
+while i< 6:
+  print(i)
+  i+=1
+else:
+  print ("i is no longer than 6") 
+
+print("**************PYTHON WHILE LOOPS**************\n")
+
+print("\nejercicio 1:")
+fruits = ["apple", "banana", "cherry"]
+for x in fruits:
+   print(x)
+print("\nejercicio 2:")
+fruits = ["apple", "banana", "cherry"]
+for x in fruits:
+  if x == "banana":
+    continue
+  print(x)
+print("\nejercicio 3:")
+for x in range(6):
+ print(x)
+print("\nejercicio 4:")
+
+fruits = ["apple", "banana", "cherry"]
+for x in fruits:
+  if x == "banana":
+    break
+  print(x)
+
+  print("**************PYTHON FUNCTIONS**************\n")
+
+print("\nejercicio 1:")
+def my_function():
+  print("Hello from a function")
+my_function()
+print("\nejercicio 2:")
+def my_function(fname, lname):
+  print(fname)
+my_function("juan","perez")
+print("\nejercicio 3:")
+def my_function(numero):
+ print(numero)
+ return numero+5
+my_function(5)
+
+print("\nejercicio 4:")
+def my_function(*kids): 
+  print("The youngest child is " + kids[2])
+my_function("juan","jane","david")
+print("\nejercicio 5:")
+def my_function(**kid): 
+  print("His last name is " + kid["lname"])
+my_function(lname="smith")
+
+  
+print("**************PYTHON LAMBDA**************\n")
+
+x = lambda a:a
+print(x)
+
+print("**************PYTHON CLASSES**************\n")
+
+print("\nejercicio 1:")
+class MyClass:
+  x="esto es una clase"
+  print(x)
+print("\nejercicio 2:")
+class MyClass: 
+  x= 5
+p1=  MyClass() #objeto
+
+print(p1.x)
+
+print("\nejercicio 3:")
+
+class Persona:
+  def __init__(self,name,age) :
+   self.name= name
+   self.age = age
+p1 = Persona("Juan", 30)
+p2 = Persona("Maria", 25)
+print(p1.name,p1.age)  # imprime "Juan"
+print(p2.age)   # imprime 25
+
+print("**************PYTHON INHERITANCE**************\n")
+
+print("\nejercicio 1:")
+class Student(Persona):
+  def __init__(self,name,age,id) :
+   super().__init__(name, age)
+   self.id = id
+
+s1 = Student("Juan", 20, "12345")
+print(s1.name)  # imprime "Juan"
+print(s1.age)   # imprime 20
+print(s1.id)  # imprime "12345"   
+
+print("**************PYTHON MODULES**************\n")
+print("\nejercicio 1:")
+print("import mymodule")
+print("\nejercicio 2:")
+print("import mymodule as mx")
+print("\nejercicio 3:")
+print("import mymodule")
+print("print(dir(mymodule))")
+print("\nejercicio 4:")
+print("from mymodule import person1")
